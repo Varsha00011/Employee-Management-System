@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Menagement System</h1>
+    <form class="form ">
+        <label for="">Employee ID:</label>
+        <input type="number" placeholder="Enter your id..." id="Employeeid">
+        <label for="">Employee Name:</label>
+        <input type="text" placeholder="Enter your name..." id="name">
+        <label for="">Employee Age:</label>
+        <input type="number" placeholder="Enter your Age..." id="age">
+         <label for="">Employee Salary:</label>
+        <input type="number" placeholder="Salary..." id="Salary" >
+        <label for="">Gender:</label>
+        <select id="gen">
+        <option value="">Gender</option>
+        <option value="">Mail</option>
+        <option value="">Femail</option>
+        <option value="">Other</option>
+        </select>
+          <label for="role">Role</label>
+               <select  id="role">
+            <option value="">Select Role</option>
+            <option value="Frontend Developer">Frontend Developer</option>
+            <option value="Backend Developer">Backend Developer</option>
+            <option value="Full Stack Developer">Full Stack Developer</option>
+            <option value="UI/UX Designer">UI/UX Designer</option>
+            <option value="Tester">Tester</option>
+            <option value="HR">HR</option>
+            <option value="DevOps Engineer">DevOps Engineer</option>
+               </select>
+        <button id="btn" type="submit">Add Employee</button>
+    </form>
+      <hr>
+        <table id="tbl">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Salary</th>
+                    <th>Gender</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+   
+    </div>
+         <script src="./app.js"></script>
+</body>
+</html>
